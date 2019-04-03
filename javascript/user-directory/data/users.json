@@ -1,0 +1,38 @@
+ [   
+    {
+        "last_name": "Zill", 
+        "first_name": "Jillian", 
+        "email_address": "jillian@jillian.com", 
+        "title": "Java Developer"
+    },
+    {
+        "last_name": "Jobo", 
+        "first_name": "Bob", 
+        "email_address": "bob@bob.com", 
+        "title": "Database Administrator"
+    },
+    {
+        "last_name": "Erry", 
+        "first_name": "Jerry", 
+        "email_address": "jerry@jerry.com", 
+        "title": "Front End Developer"
+    },
+    {
+        "last_name": "Nome", 
+        "first_name": "Chris", 
+        "email_address": "chris@chris.com", 
+        "title": "Software Developer"
+    },
+    {
+        "last_name": "Geci", 
+        "first_name": "Alice", 
+        "email_address": "alice@alice.com", 
+        "title": "Interaction Designer"
+    },
+    {
+        "last_name": "Utna", 
+        "first_name": "Kate", 
+        "email_address": "kate@kate.com", 
+        "title": "Application Engineer"
+    }
+ ]
