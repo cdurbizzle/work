@@ -1,0 +1,44 @@
+
+<section id="taskAdder" class="page">
+    <article>
+        <h1>{{taskContent.pageTitle}}</h1>
+        <p>{{taskContent.content}}</p>
+
+        <div class="taskadder-wrap">
+            <form name="taskAdder" ng-submit="addTask(taskAdder.$valid)" novalidate>
+                <label for="name">Task Name<sup>*</sup></label>
+                <input type="text" name="name" placeholder="Task Name" ng-model="task.name" ng-class="{'has-error': taskAdder.name.$pristine && submitted || taskAdder.name.$invalid && submitted}" ng-required="true"/>
+                <p class="has-error-message" ng-messages="taskAdder.name.$error" ng-if="taskAdder.name.$pristine && submitted || taskAdder.name.$invalid && submitted">
+                    <ng-messages-include src="./partials/error-messages.html"></ng-messages-include>
+                </p>
+
+                <label for="date">Task Date<sup>*</sup><small>Date entered should be today or later.</small></label>
+                <input type="date" name="date" ng-min="mindate | date: 'yyyy-MM-dd'" ng-model="task.date" ng-class="{'has-error': taskAdder.date.$pristine && submitted || taskAdder.date.$invalid && submitted}" ng-required="true"/>
+                <p class="has-error-message" ng-messages="taskAdder.date.$error" ng-if="taskAdder.date.$pristine && submitted || taskAdder.date.$invalid && submitted">
+                    <ng-messages-include src="./partials/error-messages.html"></ng-messages-include>
+                </p>
+
+                <label for="assign">Assigned To<sup>*</sup></label>
+                <input type="text" name="assign" placeholder="Assigned To" ng-model="task.assign" ng-class="{'has-error': taskAdder.assign.$pristine && submitted || taskAdder.assign.$invalid && submitted}" ng-required="true"/>
+                <p class="has-error-message" ng-messages="taskAdder.assign.$error" ng-if="taskAdder.assign.$pristine && submitted || taskAdder.assign.$invalid && submitted">
+                    <ng-messages-include src="./partials/error-messages.html"></ng-messages-include>
+                </p>
+
+                <button type="submit" ng-class="{'add-success': addsuccess}">
+                    <span ng-if="!addsuccess">Add Task</span> 
+                    <span ng-if="addsuccess">{{taskContent.successMessage}}</span>
+                </button>
+            </form>
+
+            <table id="taskOutput">
+                <tbody>
+                    <tr>
+                        <th>Task List</th>
+                    </tr>
+                    <tr ng-repeat="data in taskData"><td>{{data.name}}</td><td>{{mindate | date: 'M-d-yyyy'}}</td><td>{{data.assigned}}</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </article>
+</section>

@@ -1,0 +1,104 @@
+{
+	"mainmenu": [
+		{
+			"buttontitle":"Generic Page",
+			"linktitle":"Generic Page",
+            "link": "generic-page"
+		},
+		{
+			"buttontitle":"Task Adder",
+			"linktitle":"Task Adder",
+            "link": "task-adder"
+		},
+		{
+			"buttontitle":"Gallery",
+			"linktitle":"Gallery",
+            "link": "gallery"
+		},
+		{
+			"buttontitle":"Contact",
+			"linktitle":"Contact",
+            "link": "contact"
+		}
+	],
+	"home": {
+			"pageTitle": "Home Page",
+            "pageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+	},
+	"generic": {
+			"title": "Generic Page",
+			"pageTitle": "Generic Page",
+            "pageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+	},
+	"gallery": [
+		{
+			"title": "Gallery",
+			"pageTitle": "Gallery",
+			"content": "Click on thumbnails below to view slide.",
+			"slides": [
+                {
+					"title":"Slide 1",
+					"slidetitle": "Slide 1",
+					"imagetitle": "Slide 1",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				},
+				{
+					"title":"Slide 2",
+					"slidetitle": "Slide 2",
+					"imagetitle": "Slide 2",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				},
+				{
+					"title":"Slide 3",
+					"slidetitle": "Slide 3",
+					"imagetitle": "Slide 3",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				},
+				{
+					"title":"Slide 4",
+					"slidetitle": "Slide 4",
+					"imagetitle": "Slide 4",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				},
+				{
+					"title":"Slide 5",
+					"slidetitle": "Slide 5",
+					"imagetitle": "Slide 5",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				},
+				{
+					"title":"Slide 6",
+					"slidetitle": "Slide 6",
+					"imagetitle": "Slide 6",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				}
+			]
+		}
+	],
+	"tasks": {
+		"title": "Task Adder",
+		"pageTitle": "Task Adder",
+		"content": "Fill out the information below to add a task.",
+		"successMessage": "Task Added!"
+	},
+	"contact": {
+			"title":"Contact",
+			"pageTitle":"Contact",
+			"successMessage": "Thanks for contacting us, we'll get back to soon."
+	},
+	"footer": {
+		"links": [
+			{
+				"link": "http://www.linkedin.com",
+				"linkTitle": "View us on LinkedIn",
+				"class": "linkedin"
+			},
+			{
+				"link": "https://twitter.com/",
+				"linkTitle": "Follow us on Twitter",
+				"class": "twitter"
+			}
+		],
+		"copyright": "Application/Website All Rights Reserved."
+	}
+}
