@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <title>Application Name {{title}}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+
+    <script type="text/javascript" src="js/helpers/modernizr-custom.js"></script>
+
+    <link rel="stylesheet" href="css/styles.min.css"/>
+
+    <script type="text/javascript" src="js/libs/angular.min.js"></script>
+
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- if Application/Website uses Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    </script>
+
+</head>
+    <body ng-controller="content" ng-class="{'mobile-nav-open': menuOpen}">
+        <div class="page-wrap">
+            <header>
+                <a href="javascript:void(0);" ng-class="{'nav-open': menuOpen}" ng-click="openMenu();" title="Main Menu" class="mobile-nav-btn">
+                    <span class="mobile-nav-btn__icon-line"></span>
+                    <span class="mobile-nav-btn__icon-line"></span>
+                    <span class="mobile-nav-btn__icon-line"></span>
+                </a>
+                <a ui-sref="home" ng-click="closeMenu($index);" title="Chris Durbin, Front-End Developer" class="intro-link">Application/Website</a>
+                <nav ng-include="mainNav.url" class="main-nav"></nav>
+            </header>
+            <main role="main" ui-view="mainView"></main>
+        </div>
+        <footer>
+            <p class="copyright">
+                © {{date | date: 'yyyy'}} {{footerContent.copyright}}
+                <a ng-repeat="links in footerContent.links" href="{{links.link}}" title="{{links.linkTitle}}" class="{{links.class}}"></a>
+            </p>
+        </footer>
+    </body>
+    <script type="text/javascript" src="js/appweb.min.js"></script>
+</html>

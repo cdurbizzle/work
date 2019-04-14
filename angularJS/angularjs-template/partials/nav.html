@@ -1,0 +1,4 @@
+
+<ul>
+    <li ng-repeat="mainmenu in menuContent"><a ui-sref="{{mainmenu.link}}" ng-click="clickMenu();" ng-class="{'active': isActive('/{{mainmenu.link}}')}" title="{{mainmenu.linktitle}}">{{mainmenu.buttontitle}}</a></li>
+</ul>
