@@ -1,5 +1,6 @@
 
-(() => { // initial user table build to the DOM
+// initial user table build to the DOM
+(() => { 
   var req = new XMLHttpRequest();
   req.open('GET', 'data/users.json', true);
   req.onreadystatechange = () => {
@@ -23,8 +24,10 @@
   req.send();
 })();
 
+// add user
 const addUser = () => {
-  const fn = document.getElementById('fname');
+  const aform = document.forms.au;
+  const fn = document.getElementById('fname'); // change to form.name
   const ln = document.getElementById('lname');
   const email = document.getElementById('email');
   const title = document.getElementById('title');
@@ -52,10 +55,7 @@ const addUser = () => {
       + '<small><span data-email="' + email.value + '" class="email">' + email.value + '</span></small>';
       ncellRight.innerHTML = '<span data-title="' + title.value + '" class="title"></span>' + title.value + '</span>';
 
-      ln.value = '';
-      fn.value = '';
-      email.value = '';
-      title.value = '';
+      aform.reset();
       return nrow;
   }
   else {
@@ -94,22 +94,23 @@ const addUser = () => {
       title.classList.add('has-error');
       title.after(errcont.cloneNode(true));
     }
+    // return false;
   }
 
   const remError = () => {
-    fn.onblur = () => {
+    fn.onkeyup = () => {
       if (fn.classList.contains('has-error') && fn.value !== '') {
         fn.classList.remove('has-error');
         fn.nextSibling.remove();
       }
     }
-    ln.onblur = () => {
+    ln.onkeyup = () => {
       if (ln.classList.contains('has-error') && ln.value !== '') {
         ln.classList.remove('has-error');
         ln.nextSibling.remove();
       }
     }
-    email.onblur = () => {
+    email.onkeyup = () => {
       const emv = regx.test(email.value);
       if (emv === false) {
         email.nextSibling.replaceChild(valtxt, email.nextSibling.childNodes[0]);
@@ -119,18 +120,17 @@ const addUser = () => {
         email.nextSibling.remove();
       }
     }
-    title.onblur = () => {
+    title.onkeyup = () => {
       if (title.classList.contains('has-error') && title.value !== '') {
         title.classList.remove('has-error');
         title.nextSibling.remove();
       }
     }
   };
-  return remError(regx, valtxt);
+  remError(regx, valtxt);
 };
-const auBtn = document.getElementById('addUserBtn');
-auBtn.addEventListener('click', addUser);
 
+// remove user
 const removeUser = () => {
   const chk = document.querySelectorAll('#userList input');
 
@@ -143,6 +143,7 @@ const removeUser = () => {
 const remBtn = document.getElementById('remBtn');
 remBtn.addEventListener('click', removeUser);
 
+// sort users
 const sortUser = () => {
   const plcontainer = document.getElementById('userList');
   const sortProv = document.getElementById('sort');
