@@ -1,2 +1,2 @@
 
-[Demo](http://angularjs.cdurbin.com :target="_blank")
+[Demo]sed -i 's|href="http|target="_blank" href="http|g' index.html
