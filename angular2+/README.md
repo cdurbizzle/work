@@ -1,2 +1,2 @@
 
-[Demo] (http://angular2plus.cdurbin.com/)
+[Demo](http://angular2plus.cdurbin.com/)
