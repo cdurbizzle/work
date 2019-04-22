@@ -1,2 +1,2 @@
 
-http://angularjs.cdurbin.com/
+[Demo](http://angularjs.cdurbin.com)
