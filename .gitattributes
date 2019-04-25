@@ -1,4 +1,2 @@
 angularJS/angularjs-template/partials/*.html linguist-detectable=false
 angular2+/world-weather/src/app/partials/*.html linguist-detectable=false
-angular2+/world-weather/src/scss/*.scss linguist-detectable=false
-angular2+/world-weather/src/scss/*.css linguist-detectable=false
