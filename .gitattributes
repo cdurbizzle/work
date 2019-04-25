@@ -1,1 +1,1 @@
-angularJS/angularjs-template/partials/linguist-detectable=false
+angularJS/angularjs-template/partials/*.html linguist-detectable=false
