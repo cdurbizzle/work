@@ -1,2 +1,4 @@
 
-SCSS/*.rb linguist-language=scss
+SCSS/*.scss linguist-language=scss
+AgularJS/*/*.js linguist-language=Angular
+Angular2+/*.js linguist-language=javascript
