@@ -1,6 +1,6 @@
 
 # Angular Example
 
-Developed using Angular 5 and Angular CLI this application sends data submitted by the user and then consumes data returned from a weather RESTful API (free version - no states or regions). 
+A world weather application based on City and Country developed using Angular 5 and Angular CLI. This application sends data submitted by the user and then consumes data returned from a weather RESTful API (free version - no states or regions). 
 
 [Demo](http://angular2plus.cdurbin.com/)
