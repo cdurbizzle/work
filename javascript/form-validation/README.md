@@ -1,5 +1,5 @@
 
 ## Form Validation
-Client side form validation using vanilla javascript. 
+Example of javascript client side form validation.
 
 [Demo](http://javascript.cdurbin.com/form-validation)
