@@ -5,7 +5,7 @@ Examples of JavaScript, descriptions and demos of the examples below.
 
 
 ## Form Validation
-Client side form validation using vanilla javascript. [Demo](http://javascript.cdurbin.com/form-validation)
+Example of javascript client side form validation. [Demo](http://javascript.cdurbin.com/form-validation)
 
 
 ## User Directory
