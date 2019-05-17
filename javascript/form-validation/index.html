@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Validation</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+    <body>
+        <header>
+            <h1>Form Validation <small>* required field</small></h1>
+        </header>
+        <main>
+            <div class="container">
+                <form name="valid" onsubmit="return validateF()" novalidate>
+                    <label for="fname">First Name <sup>*</sup></label> 
+                    <input type="text" name="fname" id="fname">
+                    <label for="lname">Last Name <sup>*</sup></label> 
+                    <input type="text" name="lname" id="lname">
+                    <label for="email">Email Address <sup>*</sup></label>
+                    <input type="email" name="email" id="email">
+                    <fieldset name="options" id="options">
+                        <legend>Options <sup>*</sup></legend>
+                        <label for="option1">
+                            <input type="radio" name="opt" id="option1" value="option1">one
+                        </label>
+                        <label for="option2">
+                            <input type="radio" name="opt" id="option2" value="option2">two
+                        </label>
+                        <label for="option3">
+                            <input type="radio" name="opt" id="option3" value="option3">three
+                        </label>
+                    </fieldset>
+                    <label for="select">Select <sup>*</sup></label> 
+                    <select name="select" id="select">
+                    <option value="">Please Select</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    </select>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+        <script src="js/fvapp.min.js"></script>
+    </body>
+</html>
