@@ -35,7 +35,6 @@ export class AppComponent {
   getWeather() {
     this.submitted = true;
     if (this.city !== '' && this.country !== '') {
-      console.log(this.city);
       this.complete = true;
       this.configUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + this.city + ',' + this.country + '&units=imperial&APPID=' + this.wk;
       this.http.get(this.configUrl, { responseType: 'json' })
