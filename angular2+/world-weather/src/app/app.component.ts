@@ -28,7 +28,7 @@ export class AppComponent {
   city = '';
   country = '';
 
-  private configUrl: string;
+  public configUrl: string;
 
   constructor(private http: HttpClient) { }
 
