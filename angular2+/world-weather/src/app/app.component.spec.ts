@@ -1,7 +1,7 @@
 import { TestBed, async, getTestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
 
