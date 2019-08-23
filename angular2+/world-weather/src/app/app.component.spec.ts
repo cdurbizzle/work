@@ -68,6 +68,8 @@ describe('AppComponent', () => {
       app.clearWeather();
       expect(app.city).toEqual('');
       expect(app.country).toEqual('');
+      expect(app.submitted).toEqual(false);
+      expect(app.complete).toEqual(false);
     });
   });
 })
