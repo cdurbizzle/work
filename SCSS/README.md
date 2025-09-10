@@ -1,4 +1,4 @@
 
 # scss
 
-Examples of SASS.
+Examples the CSS Preprocessor SASS.
