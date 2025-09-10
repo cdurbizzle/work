@@ -5,5 +5,5 @@ Code sample repository of some of the languages and frameworks I use for Front E
 Includes examples of the following
 * Angular
 * AngularJS
-* JavaScript
+* javascript
 * scss or SASS
