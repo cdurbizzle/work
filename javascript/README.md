@@ -1,7 +1,7 @@
 
 # JavaScript Examples
 
-Examples of JavaScript, descriptions and demos of the examples below.
+Examples of JavaScript, descriptions and demos of the examples are below.
 
 
 ## Form Validation
