@@ -22,7 +22,7 @@ export class AppComponent {
   temp: any;
   tp?: string;
 
-  wk = '0b7bf34153fac025d3c03c7540685834';
+  wk = 'world weather token goes here';
   city = '';
   country = '';
 
